@@ -38,11 +38,13 @@ app.get('/:id', (req, res) => {
   res.send(':id URI 가 정상적으로 반환되었습니다');
 });
 
+
 app.use("/api", [goodsRouter, cartsRouter]) // /api 경로가 추가된 경우 goodsRouter를 거쳐라.
 
 app.get('/', (req, res) => { // express() 객체 안에 있는 get 을 사용하기 때문에 별도로 router를 설정할 필요 없음.
   res.send('Hello World!');
 });
+
 
 app.listen(port, () => {
   console.log(`${port} 포트 서버 오픈!`);
