@@ -1,7 +1,7 @@
 const mongoose = require("mongoose")
 
 const connect = () => {
-    mongoose.connect(process.env.dbMongoose).catch(err => console.log(err))
+    mongoose.connect("mongodb://0.0.0.0:27017/spa_mall").catch(err => console.log(err))
 
 }
 

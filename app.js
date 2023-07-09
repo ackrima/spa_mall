@@ -3,7 +3,7 @@ const app = express();
 const dotenv = require("dotenv")      // require("dotenv").config(); 로 만들어도 실행됨. 이게 정규문서에서 나오는 실행법임
 dotenv.config();
 
-const port = process.env.mallPort;
+const port = 3000;
 const connect = require("./schemas/index.js");
 connect();
 
