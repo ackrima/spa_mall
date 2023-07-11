@@ -4,7 +4,7 @@ const dotenv = require("dotenv")      // require("dotenv").config(); 로 만들�
 dotenv.config();
 
 const port = 3000;
-const connect = require("./schemas/index.js");
+const connect = require("./schemas/index.js"); // mongoDB 연결 실행
 connect();
 
 const cartsRouter = require("./routes/carts.js");
